@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'specialElite';
+    src: url('../fonts/SpecialElite.ttf');
+}
+
+*  {
+  box-sizing:  border-box;
+}
+
+body  {
+  margin:  0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0 0 0 0;
+}
+
+.site-wrap .site-canvas {
+    padding-left: 220px;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+.site-side {
+    position: fixed;
+    height: 100%;
+    width: 220px;
+    background: #252525;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+
+.site-side .side-nav .logo a {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    display: block;
+    padding-bottom: 35px;
+    padding-top: 50px;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    text-align: left;
+    transition: .3s ease all;
+    line-height: 1;
+}
+
+
+.site-side .nav-text a:hover {
+    color: #FFF;
+    background: #1d1d1d;
+}
+
+.site-side .nav-text a {
+    font-family: Arial, sans-serif;
+    color: #BBB;
+    display: block;
+    padding: 12px 20px 12px 12px;
+    font-size: 22px;
+    letter-spacing: .5px;
+    transition: .3s ease all;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.spacer {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.site-side .nav-text .glyphicon {
+  font-size: 16px;
+}
+
+.site-side .rate-buttons a {
+  display: inline-flex;
+  padding: 5px 5px 5px 5px;
+  font-size: 54px;
+  text-align: center;
+}
+
+.site-side .rate-buttons .glyphicon {
+  font-size: 24px;
+  text-align: center;
+}
+
+.site-side .rate-buttons a:hover {
+  background: #252525;
+}
+
+.site-side .rate-buttons a:hover .glyphicon-circle-arrow-down {
+    color: #CCCCFF;
+}
+
+.site-side .rate-buttons a:hover .glyphicon-circle-arrow-up {
+    color: #ff4500;
+}
+
+.site-side .nav-buttons {
+  display: inline-flex;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.site-side .nav-buttons .glyphicon {
+  padding: 0 0 0 0;
+  font-size: 34px;
+  width: 77px;
+  text-align: center;
+}

@@ -1,0 +1,56 @@
+<div class="site-canvas">
+  <div class="site-side">
+    <nav class="side-nav">
+
+      <!-- Replace all 'href="#"'with router links -->
+    <div class="logo nav-text">
+        <a href="#">
+          USERS
+        </a>
+      </div>
+      <ul class ="list-unstyled nav-text">
+        <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <span class="bootstrap glyphicon glyphicon-triangle-right"></span>
+              Browse
+          </a>
+        </li>
+        <li><a href="#">
+          <span class="bootstrap glyphicon glyphicon-triangle-right">
+          </span>
+          Create
+        </a></li>
+        <div class="spacer"> </div>
+        <li><div class="rate-buttons">
+          <a href="#">
+          <span class="bootstrap glyphicon glyphicon-circle-arrow-up"></span>
+          </a>
+
+          <a href="#">
+            <span class="bootstrap glyphicon glyphicon-circle-arrow-down"></span>
+          </a>
+        </div></li>
+        <li><a href="#">
+          <span class="bootstrap glyphicon glyphicon-floppy-disk">
+          </span>
+          Save
+        </a></li>
+        <li><div class="nav-buttons">
+          <a href="#">
+          <span class="bootstrap glyphicon glyphicon-menu-left"></span>
+          </a>
+
+          <a href="#">
+            <span class="bootstrap glyphicon glyphicon-menu-right"></span>
+          </a>
+        </div></li>
+      </ul>
+    </nav>
+</div>
+
+  <!-- meat and potatoes -->
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>
