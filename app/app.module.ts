@@ -4,12 +4,12 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { UserProfileComponent } from './users/user-profile.component';
-import { UserBoxComponent } from './users/user-box.component';
+
+import { WordsComponent } from './words/words.component';
+import { WordsService } from './shared/services/words.service';
+
 import { NotFoundComponent } from './not-found/not-found.component';
 import { appRouting } from './app.routing';
-
-import { UserService } from './shared/services/user.service';
 
 import 'rxjs/add/operator/map';
 
@@ -21,15 +21,13 @@ import 'rxjs/add/operator/map';
     FormsModule
   ],
   declarations: [
+    WordsComponent,
     AppComponent,
     HomeComponent,
-    UserProfileComponent,
-    UserBoxComponent,
+    WordsComponent,
     NotFoundComponent
   ],
-  providers: [
-    UserService
-  ],
+  providers: [WordsService],
   bootstrap: [
     AppComponent
   ]
