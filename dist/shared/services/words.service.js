@@ -14,16 +14,12 @@ require("rxjs/add/operator/map");
 var WordsService = (function () {
     function WordsService(http) {
         this.http = http;
-        //get new word
-        // getNewWord(type) { }
         this.wordsUrl = 'api/words';
     }
     //Get word
     WordsService.prototype.getNewWord = function () {
         return this.http.get(this.wordsUrl)
-            .map(function (res) { return res; });
-        //  return "ho";
-        //  return this.http.get(this.wordsUrl);
+            .map(function (res) { return res.json(); });
     };
     return WordsService;
 }());

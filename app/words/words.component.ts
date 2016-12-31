@@ -21,12 +21,8 @@ export class WordsComponent {
   constructor(private wordsService: WordsService) { }
 
   newWord(){
-    //this.word = "hey";
-
-    // replace service for word
-    //
-    this.wordsService.getNewWord().subscribe(message => {
-      this.word = message.toString();
+    this.wordsService.getNewWord().subscribe(data => {
+      this.word = data.boyWord;
     });
   }
 }

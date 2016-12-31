@@ -18,12 +18,9 @@ var WordsComponent = (function () {
         this.word = "";
     }
     WordsComponent.prototype.newWord = function () {
-        //this.word = "hey";
         var _this = this;
-        // replace service for word
-        //
-        this.wordsService.getNewWord().subscribe(function (message) {
-            _this.word = message.toString();
+        this.wordsService.getNewWord().subscribe(function (data) {
+            _this.word = data.boyWord;
         });
     };
     return WordsComponent;
