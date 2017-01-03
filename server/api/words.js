@@ -6,11 +6,9 @@ function getWords(req, res) {
     boyWord: 'not boy'
   }
 
-  var child = require('child_process').spawn('java', ['Main', 'boy']
-  ,{ cwd: '/server/api/wordgen'
-     //env: process.env + '/server/api/wordgen'
-   }
-  );
+  var child = require('child_process')
+    .spawn('java', ['Main', 'boy']);
+
   child.stdout.on('data', (data) => {
      //console.log(data.toString());
      word = data.toString();
