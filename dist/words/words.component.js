@@ -15,12 +15,12 @@ var WordsComponent = (function () {
     // type = "boy";
     function WordsComponent(wordsService) {
         this.wordsService = wordsService;
-        this.word = "";
+        this.word = "Hit The Button";
     }
     WordsComponent.prototype.newWord = function () {
         var _this = this;
-        this.wordsService.getNewWord().subscribe(function (data) {
-            _this.word = data.boyWord;
+        this.wordsService.getBoyName().subscribe(function (data) {
+            _this.word = data.word;
         });
     };
     return WordsComponent;
@@ -28,7 +28,7 @@ var WordsComponent = (function () {
 WordsComponent = __decorate([
     core_1.Component({
         selector: 'my-words',
-        template: "\n      <a class=\"btn btn-primary btn-sm\" (click)=\"newWord()\">Get Word</a>\n      <span>{{word}}</span>\n    "
+        template: "\n      <h1>{{word}}</h1>\n      <button class=\"btn btn-info\" (click)=\"newWord()\">Get Word</button>\n      <label class=\"checkbox checkbox-blue\" for=\"checkbox1\">\n      <input type=\"checkbox\" value=\"\" id=\"checkbox1\" data-toggle=\"checkbox\" checked> Blue\n      </label>\n    "
     }),
     __metadata("design:paramtypes", [words_service_1.WordsService])
 ], WordsComponent);

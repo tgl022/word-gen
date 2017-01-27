@@ -14,7 +14,10 @@ var http_1 = require("@angular/http");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
 var home_component_1 = require("./home/home.component");
-var words_component_1 = require("./words/words.component");
+var boyname_component_1 = require("./boyname/boyname.component");
+var girlname_component_1 = require("./girlname/girlname.component");
+var slangword_component_1 = require("./slangword/slangword.component");
+var smartword_component_1 = require("./smartword/smartword.component");
 var words_service_1 = require("./shared/services/words.service");
 var not_found_component_1 = require("./not-found/not-found.component");
 var app_routing_1 = require("./app.routing");
@@ -33,10 +36,12 @@ AppModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
-            words_component_1.WordsComponent,
             app_component_1.AppComponent,
             home_component_1.HomeComponent,
-            words_component_1.WordsComponent,
+            boyname_component_1.BoyNameComponent,
+            girlname_component_1.GirlNameComponent,
+            slangword_component_1.SlangWordComponent,
+            smartword_component_1.SmartWordComponent,
             not_found_component_1.NotFoundComponent
         ],
         providers: [words_service_1.WordsService],

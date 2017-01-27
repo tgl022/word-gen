@@ -5,7 +5,7 @@ const http = require('http');
 const bodyParser = require('body-parser');
 
 // Get our API routes
-const api = require('./server/api/words');
+// const api = require('./server/api/words');
 
 const app = express();
 
@@ -17,12 +17,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '')));
 
 // Set our api routes
-app.get('/api/words', api);
+// app.get('/api/words', api);
 
 // Catch all other routes and return the index file
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
+// app.get('*', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'index.html'));
+// });
+//
+require('./server/routes/api')(app);
 
 /**
  * Get port from environment and store in Express.
