@@ -18,7 +18,7 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     core_1.Component({
         selector: 'home',
-        template: "\n  <div class=\"container\">\n    <my-words></my-words>\n  </div>\n\n  ",
+        template: "\n  <div class=\"container\">\n    home\n  </div>\n\n  ",
         styles: ["\n    .no-more-padding {\n      padding: 0px 0px 0px 0px;\n    }\n  "]
     }),
     __metadata("design:paramtypes", [])

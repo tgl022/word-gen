@@ -4,21 +4,26 @@
 
       <!-- Replace all 'href="#"'with router links -->
     <div class="logo nav-text">
-        <a href="#">
+        <a a routerLink="/" routerLinkActive= "active"
+        [routerLinkActiveOptions]="{ exact: true }">
           Word Generator
         </a>
       </div>
       <ul class ="list-unstyled nav-text">
-        <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <li><a routerLink="smart" routerLinkActive= "active"
+        [routerLinkActiveOptions]="{ exact: true }">
           Smart Word
         </a></li>
-        <li><a href="#">
+        <li><a routerLink="slang" routerLinkActive= "active"
+        [routerLinkActiveOptions]="{ exact: true }">
           Slang Word
         </a></li>
-        <li><a href="#">
+        <li><a routerLink="girl" routerLinkActive= "active"
+        [routerLinkActiveOptions]="{ exact: true }">
           Girl Name
         </a></li>
-        <li><a href="#">
+        <li><a routerLink="boy" routerLinkActive= "active"
+        [routerLinkActiveOptions]="{ exact: true }">
           Boy Name
         </a></li>
       </ul>

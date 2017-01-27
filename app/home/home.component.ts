@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
     selector: 'home',
     template: `
   <div class="container">
-    <my-words></my-words>
+    home
   </div>
 
   `,

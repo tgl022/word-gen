@@ -14,11 +14,26 @@ require("rxjs/add/operator/map");
 var WordsService = (function () {
     function WordsService(http) {
         this.http = http;
-        this.wordsUrl = 'api/words';
+        this.boyURL = 'api/boy';
+        this.girlURL = 'api/girl';
+        this.slangURL = 'api/slang';
+        this.smartURL = 'api/smart';
     }
     //Get word
-    WordsService.prototype.getNewWord = function () {
-        return this.http.get(this.wordsUrl)
+    WordsService.prototype.getBoyName = function () {
+        return this.http.get(this.boyURL)
+            .map(function (res) { return res.json(); });
+    };
+    WordsService.prototype.getGirlName = function () {
+        return this.http.get(this.girlURL)
+            .map(function (res) { return res.json(); });
+    };
+    WordsService.prototype.getSlangWord = function () {
+        return this.http.get(this.slangURL)
+            .map(function (res) { return res.json(); });
+    };
+    WordsService.prototype.getSmartWord = function () {
+        return this.http.get(this.smartURL)
             .map(function (res) { return res.json(); });
     };
     return WordsService;

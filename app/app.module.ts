@@ -5,7 +5,11 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 
-import { WordsComponent } from './words/words.component';
+import { BoyNameComponent } from './boyname/boyname.component';
+import { GirlNameComponent } from './girlname/girlname.component';
+import { SlangWordComponent } from './slangword/slangword.component';
+import { SmartWordComponent } from './smartword/smartword.component';
+
 import { WordsService } from './shared/services/words.service';
 
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -21,10 +25,12 @@ import 'rxjs/add/operator/map';
     FormsModule
   ],
   declarations: [
-    WordsComponent,
     AppComponent,
     HomeComponent,
-    WordsComponent,
+    BoyNameComponent,
+    GirlNameComponent,
+    SlangWordComponent,
+    SmartWordComponent,
     NotFoundComponent
   ],
   providers: [WordsService],
