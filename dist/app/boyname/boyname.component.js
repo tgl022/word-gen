@@ -28,7 +28,8 @@ var BoyNameComponent = (function () {
 BoyNameComponent = __decorate([
     core_1.Component({
         selector: 'my-words',
-        template: "\n      <h1>{{word}}</h1>\n      <button class=\"btn btn-info\" (click)=\"boyName()\">Get Boy Name</button>\n    "
+        template: "\n      <div class= \"page-header\">\n        {{word}}\n      </div>\n      <button class=\"btn btn-info\" (click)=\"boyName()\">Get Boy Name</button>\n    ",
+        styles: ["\n      .page-header {\n        padding-bottom: 20px;\n        padding-top: 50px;\n        font-size: 55px;\n      }\n    "]
     }),
     __metadata("design:paramtypes", [words_service_1.WordsService])
 ], BoyNameComponent);

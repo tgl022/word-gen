@@ -7,10 +7,18 @@ import { Observable }from 'rxjs/Observable';
 @Component({
     selector: 'my-words',
     template: `
-      <h1>{{word}}</h1>
+      <div class= "page-header">
+        {{word}}
+      </div>
       <button class="btn btn-info" (click)="boyName()">Get Boy Name</button>
-    `
-
+    `,
+    styles: [`
+      .page-header {
+        padding-bottom: 20px;
+        padding-top: 50px;
+        font-size: 55px;
+      }
+    `]
 })
 export class BoyNameComponent {
   word = "Hit The Button";

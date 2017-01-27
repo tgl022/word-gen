@@ -6,9 +6,18 @@ import { Observable }from 'rxjs/Observable';
 @Component({
     selector: 'smart-word',
     template: `
-      <h1>{{word}}</h1>
-      <button class="btn btn-info" (click)="smartWord()">Get Smart Word</button>
-    `
+    <div class= "page-header">
+      {{word}}
+    </div>
+    <button class="btn btn-info" (click)="smartWord()">Get Smart Word</button>
+  `,
+  styles: [`
+    .page-header {
+      padding-bottom: 20px;
+      padding-top: 50px;
+      font-size: 55px;
+    }
+  `]
 
 })
 export class SmartWordComponent {
