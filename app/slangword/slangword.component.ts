@@ -6,9 +6,18 @@ import { Observable }from 'rxjs/Observable';
 @Component({
     selector: 'slang-word',
     template: `
-      <h1>{{word}}</h1>
-      <button class="btn btn-info" (click)="slangWord()">Get Slang Word</button>
-    `
+    <div class= "page-header">
+      {{word}}
+    </div>
+    <button class="btn btn-info" (click)="slangWord()">Get Slang Word</button>
+  `,
+  styles: [`
+    .page-header {
+      padding-bottom: 20px;
+      padding-top: 50px;
+      font-size: 55px;
+    }
+  `]
 
 })
 export class SlangWordComponent {

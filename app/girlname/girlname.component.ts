@@ -5,10 +5,18 @@ import { Observable }from 'rxjs/Observable';
 @Component({
     selector: 'girl-name',
     template: `
-      <h1>{{word}}</h1>
-      <button class="btn btn-info" (click)="girlName()">Get Girl Name</button>
-    `
-
+    <div class= "page-header">
+      {{word}}
+    </div>
+    <button class="btn btn-info" (click)="girlName()">Get Girl Name</button>
+  `,
+  styles: [`
+    .page-header {
+      padding-bottom: 20px;
+      padding-top: 50px;
+      font-size: 55px;
+    }
+  `]
 })
 export class GirlNameComponent {
   word = "Hit The Button";
